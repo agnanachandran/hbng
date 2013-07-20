@@ -66,7 +66,7 @@ $(document).ready(function() {
             var wordOne = words[strOne][randOne];
             var wordTwo = words[strTwo][randTwo];
             var wordThree = words[strThree][randThree];
-
+            // Implement this properly
             if (i === 19) {
                 setTimeout(changeWords(wordOne, wordTwo, wordThree), 1000);
                 realOne = wordOne;
