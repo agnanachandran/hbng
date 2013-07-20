@@ -1,93 +1,94 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        body {
-            padding-top: 10px;
-            padding-bottom: 40px;
-        }
-    </style>
-    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="css/main.css">
 
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="hero-unit less-margin">
-            <h1 class="header">Hipster Band Name Generator</h1>
-            <div class="roulette-container center">
-                <div class="slots slot-one">
-                    <p class="word"></p>
-                </div>
-                <div class="slots slot-two">
-                    <p class="word"></p>
-                </div>
-                <div class="slots slot-three">
-                    <p class="word"></p>
-                </div>
-            </div>
-            <div class="picker-container row">
-                <div class="options option-one span4">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="options option-two span4">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="options option-three span4">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <p class="text-center"><a class="btn btn-primary btn-large">Generate!</a></p>
+<div class="container">
+    <div class="hero-unit less-margin">
+        <h1 class="header">Hipster Band Name Generator</h1>
+        <div class="roulette-container layout-center center row">
+        <div class="text-center">
+            <p class="band-text"></p>
         </div>
-
-        <hr>
-
-        <div class="row text-center">
-            <div class="span6 center">
-                <h2 class="help">How does this all work?</h2>
-                <p>Using the hipster band name generator (which is itself, probably already the name of a hipster band), you can generate a band name for your own indie-rock-pop band! Start by picking one of the three available options. Hover over your selection to choose another one. When you're ready, click Generate!</p>
+            <div class="slots slot-one center span4">
+                <div class="words word-one"></div>
+                <div class="row">
+                    <div class="options option-one span4 center">
+                        <div class="btn btn-large button down-one">Noun</div>
+                        <div class="btn btn-large button down-two">Verb</div>
+                        <div class="btn btn-large button down-three focus">Adjective</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slots slot-two center span4">
+                <p class="words word-two"></p>
+                <div class="row">
+                    <div class="options option-two span4 center">
+                        <div class="btn btn-large button down-one">Adjective</div>
+                        <div class="btn btn-large button down-two">Verb</div>
+                        <div class="btn btn-large button down-three focus">Noun</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slots slot-three center span4">
+                <p class="words word-three"></p>
+                <div class="row">
+                    <div class="options option-three span4 center">
+                        <div class="btn btn-large button down-one">Noun</div>
+                        <div class="btn btn-large button down-two">Adjective</div>
+                        <div class="btn btn-large button down-three focus">Verb</div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <hr>
-
-        <footer>
-            <div class="row">
-                <div class="span6">
-                    <p class="text-left"><a href="http://www.pluszero.ca">About</a></p>
-                </div>
-                <div class="span6">
-                    <p class="text-right"><a href="http://www.pluszero.ca">&copy; Anojh Gnanachandran</a></p>
-                </div>
-            </div>
-        </footer>
-
+        <p class="text-center"><a class="btn btn-primary btn-large generate">Generate!</a></p>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <hr>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        var _gaq=[['_setAccount','UA-37973526-1'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+    <div class="row text-center">
+        <div class="span6 center">
+            <h2 class="help">How does this all work?</h2>
+            <p>Using the hipster band name generator (which is itself, probably already the name of a hipster band), you can generate a band name for your own indie-rock-pop band! Start by picking one of the three available options. Hover over your selection to choose another one. When you're ready, click Generate!</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="row">
+            <div class="span6">
+                <p class="text-left"><a href="http://www.pluszero.ca">About</a></p>
+            </div>
+            <div class="span6">
+                <p class="text-right"><a href="http://www.pluszero.ca">&copy; Anojh Gnanachandran</a></p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!--<script>
+var _gaq=[['_setAccount','UA-37973526-1'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+ g.src='//www.google-analytics.com/ga.js';
+ s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>-->
 </body>
 </html>

@@ -1,7 +1,16 @@
+body {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
 .center {
 	float: none;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.layout-center {
+    text-align: center;
 }
 
 h1.header {
@@ -26,12 +35,18 @@ footer.bottombar {
 .roulette-container {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 8em;
 }
+
 .slots {
     height: 100px;
     width: 330px;
     display: inline-block;
     text-align: center;
+    padding-top: 60px;
+    -webkit-box-shadow: 0 0 20px black; 
+    -moz-box-shadow: 0 0 20px black; 
+    box-shadow:0 0 20px black;
     margin: 0.5em;
     background-image: linear-gradient(bottom, #C7C7C7 0%, #FFFFFF 50%, #CFD5D6 100%);
     background-image: -o-linear-gradient(bottom, #C7C7C7 0%, #FFFFFF 50%, #CFD5D6 100%);
@@ -47,4 +62,37 @@ footer.bottombar {
         color-stop(0.5, #FFFFFF),
         color-stop(1, #CFD5D6)
     );
+}
+
+.button {
+    height: 20px;
+    width: 80px;
+    padding-top: 15px;
+    position: absolute;
+}
+
+.options {
+    margin-top: 7em;
+    margin-bottom: 5em;
+    margin-left: -2.9em;
+}
+
+.focus {
+    -webkit-box-shadow:0 0 10px blue; 
+    -moz-box-shadow: 0 0 10px blue; 
+    box-shadow:0 0 10px blue;
+}
+
+.band-text {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    display: none;
+    font-family: Dingbats;
+    text-color: black;
+}
+
+.words {
+    font-family: Dingbats;
+    font-size: 1.2em;
 }
