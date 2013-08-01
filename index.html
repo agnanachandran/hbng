@@ -15,53 +15,47 @@
 </head>
 <body>
 <div class="container">
-    <div class="hero-unit less-margin">
-        <h1 class="header">Hipster Band Name Generator</h1>
-        <div class="roulette-container layout-center center row">
-        <div class="text-center">
+    <div class="jumbotron less-margin">
+        <h1 class="page-header">Hipster Band Name Generator</h1>
+        <div class="center layout-center">
             <p class="band-text"></p>
-        </div>
-            <div class="slots slot-one center span4">
-                <div class="words word-one"></div>
-                <div class="row">
-                    <div class="options option-one span4 center">
-                        <div class="btn btn-large button down-one">Noun</div>
-                        <div class="btn btn-large button down-two">Verb</div>
-                        <div class="btn btn-large button down-three focus">Adjective</div>
-                    </div>
+            <!--<div class="roulette-container center row">
+                <div class="slots slot-one col-lg-4">
+                    <p class="words word-one"></p>
                 </div>
-            </div>
-            <div class="slots slot-two center span4">
-                <p class="words word-two"></p>
-                <div class="row">
-                    <div class="options option-two span4 center">
-                        <div class="btn btn-large button down-one">Adjective</div>
-                        <div class="btn btn-large button down-two">Verb</div>
-                        <div class="btn btn-large button down-three focus">Noun</div>
-                    </div>
+                <div class="slots slot-two col-lg-4">
+                    <p class="words word-two"></p>
                 </div>
-            </div>
-            <div class="slots slot-three center span4">
-                <p class="words word-three"></p>
-                <div class="row">
-                    <div class="options option-three span4 center">
-                        <div class="btn btn-large button down-one">Noun</div>
-                        <div class="btn btn-large button down-two">Adjective</div>
-                        <div class="btn btn-large button down-three focus">Verb</div>
-                    </div>
+                <div class="slots slot-three col-lg-4">
+                    <p class="words word-three"></p>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="options option-one col-lg-4 btn-group-vertical">
+                    <button type="button" class="btn btn-default button down-one focus active">Adjective</button>
+                    <button type="button" class="btn btn-default button down-two">Verb</button>
+                    <button type="button" class="btn btn-default button down-three">Noun</button>
+                </div>
+                <div class="options option-two col-lg-4 btn-group-vertical">
+                    <button type="button" class="btn btn-default button down-one focus active">Noun</button>
+                    <button type="button" class="btn btn-default button down-two">Verb</button>
+                    <button type="button" class="btn btn-default button down-three">Adjective</button>
+                </div>
+                <div class="options option-three col-lg-4 btn-group-vertical">
+                    <button type="button" class="btn btn-default button down-one focus active">Verb</button>
+                    <button type="button" class="btn btn-default button down-two">Adjective</button>
+                    <button type="button" class="btn btn-default button down-three">Noun</button>
                 </div>
             </div>
         </div>
-        <p class="text-center"><a class="btn btn-primary btn-large generate">Generate!</a></p>
+        <div class="text-center"><a class="btn btn-primary btn-large generate">Generate!</a></div>
     </div>
 
     <hr>
 
-    <div class="row text-center">
-        <div class="span6 center">
-            <h2 class="help">How does this all work?</h2>
-            <p>Using the hipster band name generator (which is itself, probably already the name of a hipster band), you can generate a band name for your own indie-rock-pop band! Start by picking one of the three available options. Hover over your selection to choose another one. When you're ready, click Generate!</p>
-        </div>
+    <div class="center">
+        <h2 class="help">How does this work?</h2>
+        <p>Using the hipster band name generator (which is itself, probably already the name of a hipster band), you can generate a band name for your own indie-rock-pop band! Start by picking one of the three available options. Hover over your selection to choose another one. When you're ready, click Generate!</p>
     </div>
 
     <hr>
@@ -79,16 +73,16 @@
 
 </div>
 
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-<!--<script>
+<script>
 var _gaq=[['_setAccount','UA-37973526-1'],['_trackPageview']];
 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
  g.src='//www.google-analytics.com/ga.js';
  s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>-->
+</script>
 </body>
 </html>

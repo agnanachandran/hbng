@@ -22,13 +22,13 @@ $(document).ready(function() {
 
     $(".button").click(function() {
         if (($(this).parent().hasClass('option-one'))) {
-            $('.option-one').find('.focus').removeClass('focus active');
+            $('.option-one').find('.focus').removeClass('focus');
         }
         else if (($(this).parent().hasClass('option-two'))) {
-            $('.option-two').find('.focus').removeClass('focus active');
+            $('.option-two').find('.focus').removeClass('focus');
         }
         else if (($(this).parent().hasClass('option-three'))) {
-            $('.option-three').find('.focus').removeClass('focus active');
+            $('.option-three').find('.focus').removeClass('focus');
         }
         $(this).addClass('focus active');
         onClickity();
