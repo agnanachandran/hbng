@@ -45,25 +45,17 @@ $(document).ready(function() {
         var strTwo = $('.option-two').find('.focus').html();
         var strThree = $('.option-three').find('.focus').html();
         
-        var realOne = "";
-        var realTwo = "";
-        var realThree = "";
+        var randOne = Math.floor((Math.random()*words[strOne].length));
+        var randTwo = Math.floor((Math.random()*words[strTwo].length));
+        var randThree = Math.floor((Math.random()*words[strThree].length));
 
-        for (var i = 0; i < 20; i++) {
-            var randOne = Math.floor((Math.random()*words[strOne].length));
-            var randTwo = Math.floor((Math.random()*words[strTwo].length));
-            var randThree = Math.floor((Math.random()*words[strThree].length));
-
-            var wordOne = words[strOne][randOne];
-            var wordTwo = words[strTwo][randTwo];
-            var wordThree = words[strThree][randThree];
-            // Implement this properly
-            if (i === 19) {
-                setTimeout(changeWords(wordOne, wordTwo, wordThree), 1000);
-                realOne = wordOne;
-                realTwo = wordTwo;
-                realThree = wordThree;
-            }
+        var wordOne = words[strOne][randOne];
+        var wordTwo = words[strTwo][randTwo];
+        var wordThree = words[strThree][randThree];
+        // Implement this properly
+        var realOne = wordOne;
+        var realTwo = wordTwo;
+        var realThree = wordThree;
         }
 
         $('.band-text').fadeIn(500, function() {
