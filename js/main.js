@@ -5,14 +5,13 @@ var words = {
 };
 
 $(function() {
-
     var picks = {
         $one:$('#starting-one'),
         $two:$('#starting-two'),
         $three:$('#starting-three')
     };
-    
     var numbers = ['one', 'two', 'three'];
+    var names = [];
 
     $('.button').click(function() {
         for (i = 0; i < numbers.length; i++) {
@@ -29,13 +28,11 @@ $(function() {
     }
 
     $('.generate').click(function() {
-        var strings = [picks.$one.html(), picks.$two.html(), picks.$three.html()];
-        var randoms = [getRandomNumber(words[strings[0]].length),
-                       getRandomNumber(words[strings[1]].length),
-                       getRandomNumber(words[strings[2]].length)];
-        var names = [words[strings[0]][randoms[0]],
-                     words[strings[1]][randoms[1]],
-                     words[strings[2]][randoms[2]]];
+        for(i = 0; i < numbers.length; i++) {
+            choiceType = picks['$'+numbers[i]].html();
+            randomNumber = getRandomNumber(words[choiceType].length);
+            names[i] = words[choiceType][randomNumber];
+        }
         $('.band-text').fadeIn().text('Your hipster band name is: ' + names[0] + ' ' + names[1] + ' ' + names[2]);
     });
 });
